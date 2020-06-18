@@ -4,6 +4,8 @@ This is the repo for the Windows-based LLVM build/test dockerfile which can be u
 to build/test LLVM executables within a Windows Docker container. This docker image can then be used in container orchestration
 systems.
 
+For an in depth look at this dockerfile and how it was created, refer to the following [blog post](http://www.justiceadams.com/blog/2020/6/14/creating-and-using-a-windows-based-dockerfile-to-speed-up-llvm-development-time)
+
 ## The motivation
 There currently is not an official LLVM docker image that runs with Windows containers. All of the currently available options are Linux-container based. This is less than ideal for anyone developing LLVM based products which will be used in Windows environments who want to utilize the power of Docker containers for their build/test/deploy infrastructure. If you look a the [upstream LLVM] directory(https://github.com/llvm/llvm-project/tree/master/llvm/utils/docker), you'll find dockerfiles for Ubuntu and Red Hat based docker images. Thus, I set out to build a simple Dockerfile that can be used to build/test an LLVM build with your windows-based container systems.
 
